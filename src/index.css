@@ -11,21 +11,21 @@
   --color-surface: #ffffff;
   --color-text-muted: #64748B;
   --color-border: #E2E8F0;
-  
+
   --color-on-background: #131b2e;
   --color-on-surface: #131b2e;
   --color-on-surface-variant: #434655;
   --color-surface-variant: #dae2fd;
-  
+
   --color-secondary: #0060ac;
   --color-secondary-container: #64a8fe;
-  
+
   --color-tertiary: #943700;
   --color-tertiary-container: #bc4800;
-  
+
   --color-success: #10B981;
   --color-error: #ba1a1a;
-  
+
   --color-surface-dim: #d2d9f4;
   --color-surface-bright: #faf8ff;
   --color-surface-container: #eaedff;
@@ -44,24 +44,28 @@
   --color-secondary-fixed-dim: #a4c9ff;
   --color-tertiary-fixed: #ffdbcd;
   --color-tertiary-fixed-dim: #ffb596;
-  
+
   /* Fonts */
   --font-display: "Heebo", sans-serif;
   --font-body: "Inter", sans-serif;
-  
+
   /* Corner Radii matching rounded parameters */
   --radius-DEFAULT: 0.25rem;
   --radius-lg: 0.5rem;
   --radius-xl: 0.75rem;
   --radius-2xl: 1rem;
   --radius-3xl: 1.5rem;
-  
+
   /* Spacing Scale */
   --spacing-margin-desktop: 32px;
   --spacing-margin-mobile: 16px;
   --spacing-base: 8px;
   --spacing-gutter: 24px;
   --spacing-container-max: 1440px;
+
+  /* background colors */
+  --bg-surface-dark: #061836;
+
 }
 
 /* Custom global styles & animations */
@@ -71,8 +75,9 @@ body {
   color: var(--color-on-surface);
 }
 
-h1 span, h2 span {
-    font-family: "Caladea", serif;
+h1 span,
+h2 span {
+  font-family: "Caladea", serif;
 }
 
 .glass-card {
@@ -113,4 +118,8 @@ h1 span, h2 span {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-muted);
+}
+
+footer {
+  background: var(--bg-surface-dark);
 }
