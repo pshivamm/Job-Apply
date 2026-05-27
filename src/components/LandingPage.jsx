@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ApplyImg from '../assets/images/apply-now.jpg'
+import AppLogo from '../assets/images/Logo.png'
 
 export default function LandingPage({ onNavigate }) {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -30,20 +31,20 @@ export default function LandingPage({ onNavigate }) {
   return (
     <div className="min-h-screen bg-background text-blue-900 font-body antialiased">
       {/* TopNavBar */}
-      <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-5 lg:px-12 w-full bg-white  border-b border-border">
+      <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-2 lg:px-12 w-full bg-white  border-b border-border">
         <div className="logo">
-          <span
+          <a
             onClick={() => onNavigate('landing')}
             className="font-display text-3xl font-semibold text-primary tracking-tight cursor-pointer"
           >
-            MailApply
-          </span>
+            <img src={AppLogo} alt="logo" className='w-full h-18' />
+          </a>
         </div>
         <nav className="hidden md:flex items-center gap-8">
-          <a className="font-label-md text-base font-medium text-blue-900 active hover:text-primary active:text-primary transition-colors" href="/">Home</a>
-          <a className="font-label-md text-base font-medium text-blue-900 hover:text-primary transition-colors" href="#features">Features</a>
-          <a className="font-label-md text-base font-medium text-blue-900 hover:text-primary transition-colors" href="#pricing">Pricing</a>
-          <a className="font-label-md text-base font-medium text-blue-900 hover:text-primary transition-colors" href="#faq">FAQ</a>
+          <a className="font-label-md text-base font-medium text-blue-600 active hover:text-primary active:text-primary transition-colors" href="/">Home</a>
+          <a className="font-label-md text-base font-medium text-blue-600 hover:text-primary transition-colors" href="#features">Features</a>
+          <a className="font-label-md text-base font-medium text-blue-600 hover:text-primary transition-colors" href="#pricing">Pricing</a>
+          <a className="font-label-md text-base font-medium text-blue-600 hover:text-primary transition-colors" href="#faq">FAQ</a>
         </nav>
         <div className="flex items-center gap-3">
           <button
@@ -59,7 +60,7 @@ export default function LandingPage({ onNavigate }) {
             Get Started
           </button>
         </div>
-      </header> 
+      </header>
 
       <main>
         {/* Hero Section */}
@@ -67,8 +68,8 @@ export default function LandingPage({ onNavigate }) {
           <div className="max-w-[1440px] mx-auto space-y-10">
             <div className="flex items-start justify-between gap-10">
               <div className="lft">
-                <h1 className="font-display mb-3 text-3xl sm:text-4xl md:text-5xl leading-[1.2] font-semibold tracking-tight text-blue-900">
-                  Send Job Applications Faster with <span className="italic text-blue-700">Smart Templates</span>
+                <h1 className="font-display mb-3 text-3xl sm:text-4xl md:text-5xl leading-[1.2] font-semibold tracking-tight text-black">
+                  Send Job Applications Faster with <span className="italic text-blue-600">Smart Templates</span>
                 </h1>
                 <p className="font-body-lg ms-1 text-base md:text-lg text-text-muted leading-relaxed">
                   Create reusable job application templates, manage applications, and send professional emails in seconds. Stop wasting time on repetitive tasks.
@@ -101,10 +102,10 @@ export default function LandingPage({ onNavigate }) {
         </section>
 
         {/* Bento Grid Features */}
-        <section className="py-18 px-6 lg:px-8 bg-white" id="features">
+        <section className="py-14 px-6 lg:px-8 bg-white" id="features">
           <div className="max-w-[1440px] mx-auto">
-            <div className="mb-12 space-y-4">
-              <h2 className="font-display capitalize text-2xl sm:text-4xl mb-2 font-semibold tracking-tight text-blue-900">Everything you need to land your <span className="italic text-blue-700">dream job</span></h2>
+            <div className="mb-12 space-y-3 md:space-y-4">
+              <h2 className="font-display capitalize text-3xl sm:text-4xl mb-2 font-semibold tracking-tight text-black">Everything you need to land your <span className="italic text-blue-600">dream job</span></h2>
               <p className="text-text-muted text-base sm:text-lg">Powerful tools designed for the modern job seeker to automate the repetitive parts of applying.</p>
             </div>
             <div className="grid-cards p-12 bg-blue-100 rounded-3xl">
@@ -151,10 +152,10 @@ export default function LandingPage({ onNavigate }) {
         </section>
 
         {/* Steps Section */}
-        <section className="py-18 px-6 lg:px-8 bg-blue-50">
+        <section className="py-14 px-6 lg:px-8 bg-blue-50">
           <div className="max-w-[1440px] mx-auto">
-            <div className="mb-12 space-y-4">
-              <h2 className="font-display capitalize text-2xl sm:text-4xl mb-2 font-semibold tracking-tight text-blue-900">From Application to Offer in <span className="italic text-blue-700"> 3 Steps</span></h2>
+            <div className="mb-12 space-y-3 md:space-y-4">
+              <h2 className="font-display capitalize text-3xl sm:text-4xl mb-2 font-semibold tracking-tight text-black">From Application to Offer in <span className="italic text-blue-600"> 3 Steps</span></h2>
               <p className="text-text-muted text-base sm:text-lg">Powerful tools designed for the modern job seeker to automate the repetitive parts of applying.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -184,10 +185,10 @@ export default function LandingPage({ onNavigate }) {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-18 px-6 lg:px-8 bg-white" id="pricing">
+        <section className="py-14 px-6 lg:px-8 bg-white" id="pricing">
           <div className="max-w-[1440px] mx-auto">
             <div className="text-center mb-12 space-y-4">
-              <h2 className="font-display capitalize text-2xl sm:text-4xl mb-2 font-semibold tracking-tight text-blue-900">Simple, Transparent <span className="italic text-blue-700">Pricing</span></h2>
+              <h2 className="font-display capitalize text-3xl sm:text-4xl mb-2 font-semibold tracking-tight text-black">Simple, Transparent <span className="italic text-blue-600">Pricing</span></h2>
               <p className="text-text-muted text-base sm:text-lg">Choose the plan that fits your career goals.</p>
             </div>
 
@@ -265,10 +266,10 @@ export default function LandingPage({ onNavigate }) {
         </section>
 
         {/* Testimonials */}
-        <section className="py-18 px-6 lg:px-8 bg-blue-50">
+        <section className="py-14 px-6 lg:px-8 bg-blue-50">
           <div className="max-w-[1440px] mx-auto">
-            <div className="mb-12 space-y-4">
-              <h2 className="font-display capitalize text-2xl sm:text-4xl mb-2 font-semibold tracking-tight text-blue-900">What Our <span className="italic text-blue-700">Clients Says</span></h2>
+            <div className="mb-12 space-y-3 md:space-y-4">
+              <h2 className="font-display capitalize text-3xl sm:text-4xl mb-2 font-semibold tracking-tight text-black">What Our <span className="italic text-blue-600">Clients Says</span></h2>
               <p className="text-text-muted text-base sm:text-lg">Powerful tools designed for the modern job seeker to automate the repetitive parts of applying.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -330,10 +331,10 @@ export default function LandingPage({ onNavigate }) {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-18 px-6 lg:px-8 bg-white" id="faq">
+        <section className="py-14 px-6 lg:px-8 bg-white" id="faq">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="font-display capitalize text-2xl sm:text-4xl mb-2 font-semibold tracking-tight text-blue-900">Frequently Asked <span className="italic text-blue-700">Questions</span></h2>
+              <h2 className="font-display capitalize text-3xl sm:text-4xl mb-2 font-semibold tracking-tight text-black">Frequently Asked <span className="italic text-blue-600">Questions</span></h2>
             </div>
             <div className="space-y-4">
               {faqs.map((faq, index) => (
@@ -362,7 +363,7 @@ export default function LandingPage({ onNavigate }) {
         </section>
 
         {/* Final CTA */}
-        <section className="py-18 px-6 lg:px-8">
+        <section className="py-14 px-6 lg:px-8">
           <div className="w-full bg-primary text-white rounded-3xl p-12">
             <h2 className="font-display capitalize text-center text-2xl mb-3 sm:text-3xl md:text-4xl font-bold leading-tight">Ready to accelerate <span className="italic text-blue-300">your career</span> ?</h2>
             <p className="text-white/80 text-center font-body sm:text-base">Join 10,000+ professionals who have already supercharged their job search with MailApply.</p>
