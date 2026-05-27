@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import ApplyImg from '../assets/images/apply-now.jpg'
-import AppLogo from '../assets/images/Logo.png'
-import AppLogo2 from '../assets/images/Logo1.png'
+import ApplyImg from '../assets/images/apply-now.jpg';
+import AppLogo from '../assets/images/Logo.png';
+import AppLogo2 from '../assets/images/Logo1.png';
+import { FaSquareBehance, FaLinkedin, FaEnvelopeOpenText } from "react-icons/fa6";
 
 export default function LandingPage({ onNavigate }) {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -391,48 +392,50 @@ export default function LandingPage({ onNavigate }) {
               <img src={AppLogo2} alt="logo" className='md:h-15 h-13' />
             </a>
             <p className="font-body text-sm leading-relaxed">The smarter way to manage your job applications and reach recruiters.</p>
-            <div className="flex gap-4">
-              <a className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="#">
-                <span className="material-symbols-outlined text-[18px]">public</span>
+            <div className="flex gap-3 md:mt-3 mt-2">
+              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="#">
+                <FaEnvelopeOpenText />
               </a>
-              <a className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="#">
-                <span class="material-symbols-outlined">mail</span>
-
+              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="#">
+                <FaSquareBehance />
+              </a>
+              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="#">
+                <FaLinkedin />
               </a>
             </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 md:gap-16 gap-8 md:w-1/2 w-full">
             <div className="space-y-4">
-              <p className="font-display font-bold text-white text-sm">Product</p>
+              <p className="font-display font-bold text-white text-base uppercase">Product</p>
               <nav className="flex flex-col gap-3">
-                <a className="hover:text-white transition-colors text-xs font-medium" href="#features">Features</a>
-                <a className="hover:text-white transition-colors text-xs font-medium" href="#pricing">Pricing</a>
-                <a className="hover:text-white transition-colors text-xs font-medium" href="#">Extension</a>
+                <a className="hover:text-white transition-colors text-sm font-medium" href="#features">Features</a>
+                <a className="hover:text-white transition-colors text-sm font-medium" href="#pricing">Pricing</a>
+                <a className="hover:text-white transition-colors text-sm font-medium" href="#">Extension</a>
               </nav>
             </div>
             <div className="space-y-4">
-              <p className="font-display font-bold text-white text-sm">Company</p>
+              <p className="font-display font-bold text-white text-base uppercase">Company</p>
               <nav className="flex flex-col gap-3">
-                <a className="hover:text-white transition-colors text-xs font-medium" href="#">About Us</a>
-                <a className="hover:text-white transition-colors text-xs font-medium" href="#">Careers</a>
-                <a className="hover:text-white transition-colors text-xs font-medium" href="#">Contact</a>
+                <a className="hover:text-white transition-colors text-sm font-medium" href="#">About Us</a>
+                <a className="hover:text-white transition-colors text-sm font-medium" href="#">Careers</a>
+                <a className="hover:text-white transition-colors text-sm font-medium" href="#">Contact</a>
               </nav>
             </div>
             <div className="space-y-4">
-              <p className="font-display font-bold text-white text-sm">Legal</p>
+              <p className="font-display font-bold text-white text-base uppercase">Legal</p>
               <nav className="flex flex-col gap-3">
-                <a className="hover:text-white transition-colors text-xs font-medium" href="#">Privacy Policy</a>
-                <a className="hover:text-white transition-colors text-xs font-medium" href="#">Terms of Service</a>
+                <a className="hover:text-white transition-colors text-sm font-medium" href="#">Privacy Policy</a>
+                <a className="hover:text-white transition-colors text-sm font-medium" href="#">Terms of Service</a>
               </nav>
             </div>
           </div>
         </div>
-        <div className="max-w-[1440px] mx-auto mt-5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium">
-          <p>© 2026 MailApply Inc. All rights reserved.</p>
+        <div className="max-w-[1440px] mx-auto mt-5 flex flex-col md:flex-row justify-between items-center md:gap-4 gap-3 text-xs font-medium">
+          <p className="text-sm">© 2026 MailApply Inc. All rights reserved.</p>
           <div className="flex gap-6">
-            <a className="hover:text-white" href="#">Status</a>
-            <a className="hover:text-white" href="#">Security</a>
+            <a className="hover:text-white text-sm" href="#">Status</a>
+            <a className="hover:text-white text-sm" href="#">Security</a>
           </div>
         </div>
       </footer>
