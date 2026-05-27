@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ApplyImg from '../assets/images/apply-now.jpg';
 import AppLogo from '../assets/images/logo.png';
 import AppLogo2 from '../assets/images/logo1.png';
-import { FaSquareBehance, FaLinkedin, FaEnvelopeOpenText } from "react-icons/fa6";
+import { FaSquareBehance, FaLinkedin, FaEnvelopeOpenText, FaPhone } from "react-icons/fa6";
 
 export default function LandingPage({ onNavigate }) {
   const [activeFaq, setActiveFaq] = useState(null);
@@ -393,13 +393,16 @@ export default function LandingPage({ onNavigate }) {
             </a>
             <p className="font-body text-sm leading-relaxed">The smarter way to manage your job applications and reach recruiters.</p>
             <div className="flex gap-3 md:mt-3 mt-2">
-              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="#">
+              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="tel:+916307989801">
+                <FaPhone />
+              </a>
+              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="mailto:shivampandey.self@gmail.com">
                 <FaEnvelopeOpenText />
               </a>
-              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="#">
+              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="https://www.behance.net/shivampandey69">
                 <FaSquareBehance />
               </a>
-              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="#">
+              <a className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-primary text-white transition-colors" href="https://www.linkedin.com/in/shivam-pandey-19b927249/">
                 <FaLinkedin />
               </a>
             </div>
