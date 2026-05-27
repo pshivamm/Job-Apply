@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ApplyImg from '../assets/images/apply-now.jpg';
-import AppLogo from '../assets/images/Logo.png';
-import AppLogo2 from '../assets/images/Logo1.png';
+import AppLogo from '../assets/images/logo.png';
+import AppLogo2 from '../assets/images/logo1.png';
 import { FaSquareBehance, FaLinkedin, FaEnvelopeOpenText } from "react-icons/fa6";
 
 export default function LandingPage({ onNavigate }) {
